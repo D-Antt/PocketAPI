@@ -1,5 +1,5 @@
 //this is cheaper computationally
-const imgContainer = document.querySelector("#main-image-container img ");
+const pokeCon = document.querySelector("#pokeCon img");
 
 //here is where we put the caption
 const caption = document.getElementById("poke-img-caption");
@@ -12,7 +12,7 @@ fetch("https://pokeapi.co/api/v2/pokemon/56")
     const name = pokemon.name;
     const imgSrc = pokemon.sprites.other["official-artwork"].front_default;
     caption.innerText = name;
-    imgContainer.src = imgSrc;
-    imgContainer.alt = name;
+    pokeCon.src = imgSrc;
+    pokeCon.alt = name;
 })
 .catch((err) => console.log(err));
