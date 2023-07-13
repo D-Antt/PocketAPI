@@ -1,4 +1,4 @@
-#main-image-container{
+#pokeCon{
     display: flex;
     flex-direction: column;
     border: 5px solid blue;
@@ -9,6 +9,6 @@
     align-items: center;
 }
 
-#poke-img-caption{
+#pokeName{
     text-align: center;
 }
