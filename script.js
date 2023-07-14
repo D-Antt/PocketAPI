@@ -5,7 +5,6 @@ const pokeWeight = document.getElementById("weight");
 const pokeHeight = document.getElementById("height");
 const abilitiesList = document.getElementById("abilitiesList");
 const getPokeButton = document.getElementById("getPokeButton");
-
 //utility functions
 function setImgSrcAndAlt(imgNode, imgSrc, imgAlt){
     imgNode.src = imgSrc;
