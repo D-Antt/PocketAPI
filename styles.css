@@ -1,14 +1,98 @@
+body {
+    background-image: url('assets/PokemonAPIBackground.png');
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;;
+}
 #pokeCon{
     display: flex;
     flex-direction: column;
-    border: 5px solid blue;
     width:60%;
-    min-height: 70vh;
+    min-height: 60vh;
     margin: 0 auto;
     align-content: center;
     align-items: center;
 }
 
+#mainHeader {
+    text-align: center;
+    background-color: lightgreen;
+}
+
 #pokeName{
     text-align: center;
 }
+
+.pokeControls {
+    display:flex;
+    justify-content: center;
+}
+
+.pokeStats {
+    display:flex;
+    flex-direction: row;
+    justify-content: space-around;
+    margin: 0 auto;
+    width: 80%;
+    border: 2px solid black;
+    background: linear-gradient(270deg, gray, lightgreen);
+    background-size: 200% 200%;
+    animation: Gradient 3s ease infinite;
+}
+
+@keyframes Gradient {
+    0% { background-position: 0% 50%; }
+    50% { background-position: 100% 50%; }
+    100% { background-position: 0% 50%; }
+}
+
+.pokeStatsLeft,
+.pokeStatsRight {
+    border: solid 2px black;
+    display:flex;
+    flex-direction: column;
+    align-items: flex-start;
+    background: linear-gradient(270deg, lightgreen, gray);
+    background-size: 200% 200%;
+    animation: Gradient 3s ease infinite;
+    }
+    
+    @keyframes Gradient {
+        0% { background-position: 0% 50%; }
+        50% { background-position: 100% 50%; }
+        100% { background-position: 0% 50%; }
+    }
+
+    .pokeStatsLeft {
+        padding: 30px 40px;
+    }
+    .pokeStatsRight {
+        padding: 30px 40px;
+    }
+
+    #getPokeButton {
+        background-color: lightgreen;
+        color: black;
+        border: none;
+        padding: 15px 32px;
+        text-align: center;
+        text-decoration: none;
+        display: inline-block;
+        font-size: 16px;
+        margin: 4px 2px;
+        cursor: pointer;
+        transition-duration: 0.4s;
+        border-radius: 12px;
+    }
+    
+    #getPokeButton:hover {
+        background-color: black;
+        color: lightgreen;
+    }
+
+    #abilitiesList {
+        display:flex;
+        flex-direction: column;
+        align-items: flex-start;
+        padding-left: 0;
+    }
